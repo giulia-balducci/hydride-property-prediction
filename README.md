@@ -65,7 +65,7 @@ This project is directly informed by my doctoral research on lightweight metal h
 
 ## Status
 
-🔬 In progress — data collection phase
+🔬 In progress: data collection phase
 
 ---
 
