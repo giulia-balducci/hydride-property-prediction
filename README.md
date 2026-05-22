@@ -10,7 +10,7 @@ Solid-state hydrogen storage in metal hydrides is a promising route to safe, hig
 
 This project applies machine learning to predict two key properties:
 - **Desorption temperature** (target: near room temperature)
-- **Effective hydrogen release** (actual wt% H₂ released vs. theoretical maximum)
+- **Effective hydrogen release** (experimentally measured hydrogen storage capacity (wt%))
 
 The goal is to identify candidate materials worth investigating experimentally, informed by patterns learned from existing data.
 
@@ -39,18 +39,14 @@ hydride-property-prediction/
 
 ## Data Sources
 
-- [Materials Project](https://materialsproject.org/): structural and compositional features
-- [NIST Hydrogen Storage Materials Database](https://materials.nist.gov/materials/h2/): experimental reference data
-- [HYDPARK](http://hydpark.ca.sandia.gov/): experimental thermodynamic data for hydrides
-- Peer-reviewed literature (manual curation where needed)
+- [ML-HydPARK](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.9b02971) (Witman et al., *J. Phys. Chem. Lett.* 2019): ML-ready experimental thermodynamic data for metal hydrides, derived from the HYDPARK database.
 
 ---
 
 ## Methods
 
-- Feature engineering from composition and crystal structure
+- Feature engineering from composition, thermodynamics and crystal structure
 - Regression models for desorption temperature and hydrogen release efficiency
-- Particle size / nanostructuring as an explicit feature
 - SHAP for model interpretability
 
 *Modelling approach to be updated as the project develops.*
@@ -65,7 +61,10 @@ This project is directly informed by my doctoral research on lightweight metal h
 
 ## Status
 
-🔬 In progress: data collection phase
+🔬 In progress.
+- data collection: completed.
+- EDA: completed.
+- Feature selection and preprocessing: up next.
 
 ---
 
