@@ -40,6 +40,7 @@ hydride-property-prediction/
 ## Data Sources
 
 - [ML-HydPARK](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.9b02971) (Witman et al., *J. Phys. Chem. Lett.* 2019): ML-ready experimental thermodynamic data for metal hydrides, derived from the HYDPARK database.
+- **ElementalH_Ef**: experimental elemental hydride formation energies, used for compositional feature engineering (`Ef_weighted`). Preferred over the Materials Project DFT equivalent due to fewer missing values and methodological consistency with ML-HydPARK.
 
 ---
 
@@ -62,9 +63,13 @@ This project is directly informed by my doctoral research on lightweight metal h
 ## Status
 
 🔬 In progress.
-- data collection: completed.
+- Data collection: completed.
 - EDA: completed.
-- Feature selection and preprocessing: up next.
+- Feature selection and preprocessing: completed.
+- Modelling – Dataset A (`Hydrogen_Weight_Percent`): completed. Random Forest (+ compositional Ef_weighted feature) achieves R²=0.765 on the test set.
+- Modelling – Dataset B (`Temperature_oC`): in progress.
+- SHAP interpretability analysis: pending.
+- Candidate screening: pending.
 
 ---
 
