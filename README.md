@@ -46,11 +46,9 @@ hydride-property-prediction/
 
 ## Methods
 
-- Feature engineering from composition, thermodynamics and crystal structure
-- Regression models for desorption temperature and hydrogen release efficiency
+- Feature engineering from composition, thermodynamics and crystal structure, including a composition-weighted elemental hydride formation energy feature (Ef_weighted)
+- Two regression models: Random Forest for hydrogen storage capacity (Dataset A) and Linear Regression for desorption temperature (Dataset B)
 - SHAP for model interpretability
-
-*Modelling approach to be updated as the project develops.*
 
 ---
 
@@ -66,10 +64,9 @@ This project is directly informed by my doctoral research on lightweight metal h
 - Data collection: completed.
 - EDA: completed.
 - Feature selection and preprocessing: completed.
-- Modelling – Dataset A (`Hydrogen_Weight_Percent`): completed. Random Forest (+ compositional Ef_weighted feature) achieves R²=0.765 on the test set.
-- Modelling – Dataset B (`Temperature_oC`): in progress.
-- SHAP interpretability analysis: pending.
-- Candidate screening: pending.
+- Modelling – Dataset A (`Hydrogen_Weight_Percent`): completed. Random Forest (+ compositional Ef_weighted feature) achieves R²=0.765 on the test set. SHAP analysis completed.
+- Modelling – Dataset B (`Temperature_oC`): completed. Linear Regression is the best model (validation R²=0.886) but generalisation is poor (test R²=0.700, RMSE=87°C). Attributed to insufficient data (266 training samples). Further modelling requires a larger dataset.
+- Candidate screening: pending (notebook 05).
 
 ---
 
