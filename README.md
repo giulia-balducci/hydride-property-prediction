@@ -61,7 +61,7 @@ This project is directly informed by my doctoral research on lightweight metal h
 
 ## Status
 
-🔬 In progress.
+✅ Complete. See Future Work in notebook 05 for planned extensions.
 - Data collection: completed.
 - EDA: completed.
 - Feature selection and preprocessing: completed.
