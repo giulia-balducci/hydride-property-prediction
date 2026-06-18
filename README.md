@@ -66,7 +66,7 @@ This project is directly informed by my doctoral research on lightweight metal h
 - EDA: completed.
 - Feature selection and preprocessing: completed.
 - Modelling – Dataset A (`Hydrogen_Weight_Percent`): completed. Random Forest (+ compositional Ef_weighted feature) achieves R²=0.765 on the test set. SHAP analysis completed.
-- Modelling – Dataset B (`Temperature_oC`): completed. Linear Regression is the best model (validation R²=0.886) but generalisation is poor (test R²=0.700, RMSE=87°C). Attributed to insufficient data (266 training samples). Further modelling requires a larger dataset.
+- Modelling – Dataset B (`Temperature_oC`): completed. Linear Regression achieves validation R²=0.886 but generalises poorly (test R²=0.700, RMSE=87°C); the gap is consistent with overfitting on a small validation set and reflects insufficient training data (266 samples). Further modelling requires a larger dataset.
 - Candidate screening: completed. Test set screening identifies 2 compounds above 3.5 wt%. Exploratory full-dataset screening identifies 18 candidates above 3.5 wt%, of which 2 exceed the DOE target of 5.0 wt% (Mg0.9Sc0.1 and La0.1Mg0.85Al0.05, both 6.2% actual).
 
 ---
